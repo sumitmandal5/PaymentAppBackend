@@ -24,8 +24,7 @@ public class PaymentService implements StripeCheckoutService{
         params.put("amount", amount);
         params.put("currency", paymentInfo.getCurrency());
         params.put("payment_method_types", paymentMethodTypes);
-        //PaymentIntent paymentIntent = PaymentIntent.create(params);
-        PaymentIntent paymentIntent = null;
+        PaymentIntent paymentIntent = PaymentIntent.create(params);
         return paymentIntent;
     }
 }
