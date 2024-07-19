@@ -8,7 +8,14 @@ response along with the card details and public key to tell the Stripe server to
 our online payments are safe as the server side code (even if it has vulnerabilities) never takes any sensitive card 
 info.
 
+# Basic payment processing implemented in this app
 
+![plot](./payment1.png)
+
+# Payment processing for real world applications 
+In real world applications we will have an added security using JWT token for authentication(which can be implemented using identity management provider like AWS Cognito and Spring Security).
+
+![plot](./payment2.png)
 
 # Todo
 1.  Add Exception Handling.
